@@ -81,7 +81,7 @@ if(isset($message)){
 
 ?>
 
-<?php include 'header.php'; ?>
+<?php include 'page/header.php'; ?>
 
 <div class="container">
 
