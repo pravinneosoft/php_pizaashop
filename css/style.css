@@ -83,7 +83,14 @@ section{
    margin-top: 0;
    background-color: var(--red);
 }
-
+.pricebtn{
+   display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.btn-addcart{
+   width: 51%;
+}
 .message{
    background-color: var(--blue);
    position: sticky;
@@ -157,8 +164,8 @@ section{
 }
 
 .header .flex .cart span{
-   padding:.1rem .5rem;
-   border-radius: .5rem;
+   padding:.1rem 1rem;
+   border-radius: 25px;
    background-color: var(--white);
    color:var(--blue);
    font-size: 2rem;
@@ -269,7 +276,7 @@ section{
 
 .products .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 35rem);
+   grid-template-columns: repeat(auto-fit, 33rem);
    gap:1.5rem;
    justify-content: center;
 }
@@ -602,5 +609,22 @@ section{
    }
 
 }
-
-
+.order__heading{
+  
+   font-size: 44px;
+   margin-top: 30px;
+}
+.order__text{
+  padding: 20px 0 20px 10px;
+   font-size: 22px;
+   background-color: #2980b9;  
+     color: aquamarine;
+     margin-bottom: 50px;
+}
+.btn-order{
+color: #fff;
+border-radius: 15px;
+font-size: 20px;
+padding: 20px;
+background-color: #333;
+}

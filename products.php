@@ -54,7 +54,7 @@ if(isset($message)){
 
 <section class="products">
 
-   <h1 class="heading">latest products</h1>
+   <h1 class="heading">Menu</h1>
 
    <div class="box-container">
 
@@ -69,11 +69,13 @@ if(isset($message)){
          <div class="box">
             <img  class="view-img"style="width:100%" src="uploaded_img/<?php echo $fetch_product['image']; ?>" alt="">
             <h3><?php echo $fetch_product['name']; ?></h3>
-            <div class="price">$<?php echo $fetch_product['price']; ?>/-</div>
+           
             <input type="hidden" name="product_name" value="<?php echo $fetch_product['name']; ?>">
             <input type="hidden" name="product_price" value="<?php echo $fetch_product['price']; ?>">
             <input type="hidden" name="product_image" value="<?php echo $fetch_product['image']; ?>">
-            <input type="submit" class="btn" value="add to cart" name="add_to_cart">
+            <div class="pricebtn">
+            <input type="submit" class="btn btn-addcart" value="add to cart" name="add_to_cart">
+            <span class="price">$<?php echo $fetch_product['price']; ?>/-</span></div>
          </div>
       </form>
 
